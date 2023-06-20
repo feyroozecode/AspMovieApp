@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Movie Appe";
+    @model Movie[];
+
+}
+
+<div class=app">
+
+    <h2>Movies</h2>
+
+    <ul class="movie-list">
+
+        @foreach (var movie in Model)
+        {
+            <li class="movie-item">
+                <h3> @movie.Title </h3>
+                <p>Director : @movie.Director </p>
+                <p> Year : @movie.Year </p>
+                <p> Genre : @movie.Genre </p>
+                <p> Description : @movie.Description</p>
+            </li>
+        }
+
+    </ul>
+
+
+</div>
+
